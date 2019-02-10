@@ -31,7 +31,8 @@
         android:layout_height="match_parent"
         app:columnCount="8"
         app:rowCount="13"
-        app:orientation="vertical">
+        app:orientation="vertical"
+        android:background="@drawable/diliver">
 
         <TextView
             android:id="@+id/schedule_all_week"

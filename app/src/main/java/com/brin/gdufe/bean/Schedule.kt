@@ -44,5 +44,8 @@ class Schedule constructor(
     @ColumnInfo(name="dayInWeek")
     var dayInWeek: Int? = null//结束
 
+    override fun toString(): String {
+        return "$name \n${location!!.split("（")[0]} \n${teacher!!.split("（")[0]} \n $startSec,$endSec"
+    }
 
 }
