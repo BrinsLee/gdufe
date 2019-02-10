@@ -1,16 +1,13 @@
 package com.brin.gdufe
 
-import android.arch.persistence.room.Database
 import android.content.Intent
 import android.os.Build
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.annotation.RequiresApi
-import android.support.v7.app.AlertDialog
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
-import android.widget.ProgressBar
 import android.widget.Toast
 import com.brin.gdufe.api.JwApiFactory
 import com.brin.gdufe.bean.BasicInfo
@@ -21,8 +18,7 @@ import com.brin.util.FileUtil
 import io.reactivex.Observer
 import io.reactivex.disposables.Disposable
 import kotlinx.android.synthetic.main.activity_login.*
-import java.util.*
-import java.util.zip.Inflater
+
 
 class LoginActivity : AppCompatActivity() {
 

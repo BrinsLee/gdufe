@@ -48,6 +48,12 @@ class ListViewAdapter (var list:ArrayList<Any>, mContext : Context): BaseAdapter
                     iv_icon.setImageResource((list[position] as ListItem).icon)
                     Log.d("content",(list[position] as ListItem).content)
 
+                    if(position == 1){
+                        var cash = view .findViewById(R.id.tv_card) as TextView
+                        cash.text = (list[position] as ListItem).cash
+                        cash.visibility = View.VISIBLE
+                    }
+
                     if (position == 5) {
                         Log.d("version data position", "" + position)
                         val version_id_tv = view?.findViewById(R.id.iv_text) as TextView

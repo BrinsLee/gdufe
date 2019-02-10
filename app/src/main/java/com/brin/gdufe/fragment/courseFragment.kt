@@ -17,7 +17,6 @@ import com.brin.gdufe.api.JwApiFactory
 import com.brin.gdufe.bean.Schedule
 import com.brin.gdufe.database.GdufeDatabaseHelper
 import com.brin.util.Array2D
-import com.brin.util.CalcUtils
 import com.brin.util.FileUtil
 import io.reactivex.Observer
 import io.reactivex.disposables.Disposable

@@ -6,12 +6,21 @@ public class ListItem {
     private int image;
     private int icon;
     private String version_info;
+    private String cash;
 
     public ListItem(String content, int image,int icon) {
         this.content = content;
         this.image = image;
         this.icon = icon;
     }
+
+    public ListItem(String content, int image,int icon,String cash) {
+        this.content = content;
+        this.image = image;
+        this.icon = icon;
+        this.cash = cash;
+    }
+
     public ListItem(String content,int icon, String version_info){
         this.content = content;
         this.icon = icon;
@@ -47,5 +56,13 @@ public class ListItem {
     }
     public int getIcon(){
         return icon;
+    }
+
+    public String getCash() {
+        return cash;
+    }
+
+    public void setCash(String cash) {
+        this.cash = cash;
     }
 }
