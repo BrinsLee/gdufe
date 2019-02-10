@@ -3,6 +3,16 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
-    <color name="background">#e4e0e0</color>
+    <color name="background">#f4f6f9</color>
+    <color name="mybackground">#eaeaea</color>
     <color name="beforepress">#45e6b3</color>
+    
+    <color name="oringe">#fdb653</color>
+    <color name="yellow">#f1f95f</color>
+    <color name="green">#5ff95f</color>
+    <color name="red">#fd4f58</color>
+    <color name="blue">#5f9af9</color>
+
+
+
 </resources>

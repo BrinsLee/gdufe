@@ -2,6 +2,7 @@ package com.brin.gdufe.api
 
 import com.brin.gdufe.AppConfig
 import com.brin.gdufe.bean.BasicInfo
+import com.brin.gdufe.bean.Schedule
 import com.brin.gdufe.bean.Score
 import com.brin.gdufe.model.ApiUtils
 import io.reactivex.Observer
@@ -35,14 +36,14 @@ class JwApiFactory : ApiUtils(){
                 .subscribe(sub)
     }
 
-    //split为1代表拆开连堂课为多个item，默认为0，合并成一个
-   /* fun getSchedule(stu_time: String, split: Int, sub: Observer<List<Schedule>>) {
+    //获取课表信息
+    fun getSchedule(stu_time: String, split: Int, sub: Observer<List<Schedule>>) {
         ApiUtils.getApi(AppConfig.jwPwd).create(JwApi::class.java).getSchedule(stu_time, split)
                 .map(HttpResultFunc<List<Schedule>>())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribeOn(Schedulers.io())
                 .subscribe(sub)
-    }*/
+    }
 
     //获取个人基本信息
     fun getBasicInfo(sub: Observer<BasicInfo>) {

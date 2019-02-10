@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_gravity="start"
+            android:text="@string/app_name"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/schedule_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:columnCount="8"
+        app:rowCount="13"
+        app:orientation="vertical">
+
+        <TextView
+            android:id="@+id/schedule_all_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            android:text="1周"
+            android:textColor="@android:color/tertiary_text_dark"
+            android:textSize="13sp"
+            app:layout_column="0"
+            app:layout_gravity="center_horizontal"
+            app:layout_row="0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/schedule_item_padding"
+            android:paddingTop="@dimen/schedule_item_padding"
+            android:text="1"
+            android:textColor="@android:color/tertiary_text_dark"
+            app:layout_gravity="center_horizontal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/schedule_item_padding"
+            android:paddingTop="@dimen/schedule_item_padding"
+            android:text="2"
+            android:textColor="@android:color/tertiary_text_dark"
+            app:layout_gravity="center_horizontal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/schedule_item_padding"
+            android:paddingTop="@dimen/schedule_item_padding"
+            android:text="3"
+            android:textColor="@android:color/tertiary_text_dark"
+            app:layout_gravity="center_horizontal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/schedule_item_padding"
+            android:paddingTop="@dimen/schedule_item_padding"
+            android:text="4"
+            android:textColor="@android:color/tertiary_text_dark"
+            app:layout_gravity="center_horizontal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/schedule_item_padding"
+            android:paddingTop="@dimen/schedule_item_padding"
+            android:text="5"
+            android:textColor="@android:color/tertiary_text_dark"
+            app:layout_gravity="center_horizontal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/schedule_item_padding"
+            android:paddingTop="@dimen/schedule_item_padding"
+            android:text="6"
+            android:textColor="@android:color/tertiary_text_dark"
+            app:layout_gravity="center_horizontal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/schedule_item_padding"
+            android:paddingTop="@dimen/schedule_item_padding"
+            android:text="7"
+            android:textColor="@android:color/tertiary_text_dark"
+            app:layout_gravity="center_horizontal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/schedule_item_padding"
+            android:paddingTop="@dimen/schedule_item_padding"
+            android:text="8"
+            android:textColor="@android:color/tertiary_text_dark"
+            app:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/schedule_item_padding"
+            android:paddingTop="@dimen/schedule_item_padding"
+            android:text="9"
+            android:textColor="@android:color/tertiary_text_dark"
+            app:layout_gravity="center_horizontal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/schedule_item_padding"
+            android:paddingTop="@dimen/schedule_item_padding"
+            android:text="10"
+            android:textColor="@android:color/tertiary_text_dark"
+            app:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/schedule_item_padding"
+            android:paddingTop="@dimen/schedule_item_padding"
+            android:text="11"
+            android:textColor="@android:color/tertiary_text_dark"
+            app:layout_gravity="center_horizontal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/schedule_item_padding"
+            android:paddingTop="@dimen/schedule_item_padding"
+            android:text="12"
+            android:textColor="@android:color/tertiary_text_dark"
+            app:layout_gravity="center_horizontal" />
+        <TextView
+            android:text="周一"
+            android:textColor="@android:color/tertiary_text_dark"
+            app:layout_column="1"
+            app:layout_columnWeight="2"
+            app:layout_gravity="center"
+            app:layout_row="0" />
+        <TextView
+            android:text="周二"
+            android:textColor="@android:color/tertiary_text_dark"
+            app:layout_column="2"
+            app:layout_columnWeight="2"
+            app:layout_gravity="center"
+            app:layout_row="0" />
+        <TextView
+            android:text="周三"
+            android:textColor="@android:color/tertiary_text_dark"
+            app:layout_column="3"
+            app:layout_columnWeight="2"
+            app:layout_gravity="center"
+            app:layout_row="0" />
+        <TextView
+            android:text="周四"
+            app:layout_column="4"
+            app:layout_columnWeight="2"
+            app:layout_gravity="center"
+            app:layout_row="0" />
+        <TextView
+            android:text="周五"
+            app:layout_column="5"
+            app:layout_columnWeight="2"
+            app:layout_gravity="center"
+            app:layout_row="0" />
+        <TextView
+            android:text="周六"
+            app:layout_column="6"
+            app:layout_columnWeight="1"
+            app:layout_gravity="center"
+            app:layout_row="0" />
+        <TextView
+            android:text="周日"
+            app:layout_column="7"
+            app:layout_columnWeight="2"
+            app:layout_gravity="center"
+            app:layout_row="0" />
+
+    </android.support.v7.widget.GridLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>
